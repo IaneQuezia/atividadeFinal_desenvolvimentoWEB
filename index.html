@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC | Classificação OMS</title>
+
+        <script src="imcproject.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="container text-center">
+        <!-- <button class="btn btn-primary" onclick="clique('aceitar')">Aceitar</button>
+        <button class="btn btn-danger" onclick="clique('recusar')">Recusar</button>       
+        <button class="btn btn-warning" onclick="clique('teste')">Teste</button> -->
+        <h1>Consultório de Nutrição da Thalia</h1>
+        <label class="form-label" for="peso">Peso:</label>
+        <input type="number" class="form-control" id="peso" placeholder="Digite seu peso">
+        <label class="form-label" for="altura">Altura:</label>
+        <input type="number" class="form-control" id="altura" placeholder="Digite sua altura">
+        <button class="btn btn-primary" onclick="resultado()">CALCULAR</button>
+        <h1 id="resultado"></h1>
+    </div>
+    
+    <div class="bd-example">
+        <table class="table table-bordered border-primary">
+            <thead>
+            <tr>
+              <th scope="col">IMC</th>
+              <th scope="col">Classificação</th>
+              <th scope="col">Risco de Comorbidade</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Default</th>
+              <td>Cell</td>
+              <td>Cell</td>
+            </tr>
+            
+              <tr class="table-primary">
+                <th scope="row">Primary</th>
+                <td>Cell</td>
+                <td>Cell</td>
+              </tr>
+              <tr class="table-secondary">
+                <th scope="row">Secondary</th>
+                <td>Cell</td>
+                <td>Cell</td>
+              </tr>
+              <tr class="table-success">
+                <th scope="row">Success</th>
+                <td>Cell</td>
+                <td>Cell</td>
+              </tr>
+              <tr class="table-danger">
+                <th scope="row">Danger</th>
+                <td>Cell</td>
+                <td>Cell</td>
+              </tr>
+              <tr class="table-warning">
+                <th scope="row">Warning</th>
+                <td>Cell</td>
+                <td>Cell</td>
+              </tr>
+              <tr class="table-info">
+                <th scope="row">Info</th>
+                <td>Cell</td>
+                <td>Cell</td>
+              </tr>
+              <tr class="table-light">
+                <th scope="row">Light</th>
+                <td>Cell</td>
+                <td>Cell</td>
+              </tr>
+              <tr class="table-dark">
+                <th scope="row">Dark</th>
+                <td>Cell</td>
+                <td>Cell</td>
+              </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="bd-example">
+        <table class="table table-bordered border-primary">
+            <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td colspan="2">Larry the Bird</td>
+            <td>@twitter</td>
+          </tr>
+        </tbody>
+      
+        </table>
+      </div>
+    
+</body>
+</html>
