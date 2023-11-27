@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/button.css">
+    <link rel="stylesheet" href="css/records.css">
+    <link rel="stylesheet" href="css/form.css">
+    <script src="main.js" defer></script>
+
+    <title>Calculadora de Planos</title>
+</head>
+<body>
+    <header>
+        <h1 class="header-title">HEALTHCARE CENTER</h1>
+        <!--<nav>
+            <a href="#">Home</a>
+            <a href="#">Nossos Planos</a>
+            <a href="#">IMC</a>
+        </nav>-->
+    </header>
+    <main>
+        <div class="container my-conteiner">
+            <div class="row">
+                <button type="button" class="button blue mobile" id="cadastrarFuncionario">Cadastrar Funcionário</button>
+            </div>
+
+            <div class="row">
+                <table id="tableFuncionario" class="records">
+                    <thead>
+                        <tr>
+                            <th>NOME</th>
+                            <th>IDADE</th>
+                            <th>PESO</th>
+                            <th>ALTURA</th>
+                            <th>IMC</th>
+                            <th>COMORBIDADE</th>
+                            <th>MELHOR PREÇO</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="form" id="form">
+            <div class="form-content">
+                <header class="form-header">
+                    <h2>Novo Funcionário</h2>
+                    <span class="form-close" id="formClose">&#10006;</span>
+                </header>
+                <form id="form" class="form-form">
+                    <input type="text" id="nome" data-index="new" class="form-field" placeholder="Nome do Funcionário" required>
+                    <input type="number" id="idade" class="form-field" placeholder="Idade do Funcionário" required>
+                    <input type="number" id="peso" class="form-field" placeholder="Peso do Funcionário" required>
+                    <input type="number" id="altura" class="form-field" placeholder="Altura do Funcionário" required>
+                </form>
+                <footer class="form-footer">
+                    <button id="salvar" class="button green">Salvar</button>
+                    <button id="cancelar" class="button blue">Cancelar</button>
+                </footer>
+            </div>
+        </div>
+    </main>
+    <footer>
+    </footer>
+</body>
+</html>
